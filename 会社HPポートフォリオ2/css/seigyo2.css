@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/*========= 背景動画設定のCSS ===============*/
+
+/*header設定*/
+#header{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+    text-align: center;/*header要素に対して、中央寄せのスタイルが適用されます。*/
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/*見出し設定*/
+h1{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 33%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+    color:#4b0082;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+h2{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 66%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+    color:#4b0082;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+h3{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 44%;
+    left: 52%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+    color:#4b0082;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+h4{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 55%;
+    left: 52%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','MS Ｐ明朝', 'MS PMincho', serif;
+    color:#4b0082;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+.title { 
+    text-align: center; 
+}
+.text {
+     display: inline-block;
+     
+}
+.text br {
+    display: none;
+}
+@media (min-width: 315px) and (max-width: 700px) {
+    .text br {
+      display: inline;
+    }
+    
+    h1{
+        /*要素の配置*/
+        position:absolute;
+        /*要素を天地中央寄せ*/
+        top: 22%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        /*見た目の調整*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+        font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+        color:#4b0082;
+        text-shadow: 0 0 10px #666;
+    }
+    h2{
+        /*要素の配置*/
+        position:absolute;
+        /*要素を天地中央寄せ*/
+        top: 88%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        /*見た目の調整*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+        font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+        color:#ffffff;
+        text-shadow: 0 0 10px #666;
+    }
+    h3{
+        /*要素の配置*/
+        position:absolute;
+        /*要素を天地中央寄せ*/
+        top: 44%;
+        left: 52%;
+        transform: translateY(-50%) translateX(-50%);
+        /*見た目の調整*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+        font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+        color:#4b0082;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    h4{
+        /*要素の配置*/
+        position:absolute;
+        /*要素を天地中央寄せ*/
+        top: 69%;
+        left: 52%;
+        transform: translateY(-50%) translateX(-50%);
+        /*見た目の調整*/
+        font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','MS Ｐ明朝', 'MS PMincho', serif;
+        color:#4b0082;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+  }
+  @media (max-width: 315px){
+    .text br {
+        display: inline;
+      }
+      
+      h1{
+          /*要素の配置*/
+          position:absolute;
+          /*要素を天地中央寄せ*/
+          top: 13%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          /*見た目の調整*/
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+          font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+          color:#4b0082;
+          text-shadow: 0 0 10px rgb(255, 255, 255);
+      }
+      h2{
+          /*要素の配置*/
+          position:absolute;
+          /*要素を天地中央寄せ*/
+          top: 88%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          /*見た目の調整*/
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+          font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+          color:#ffffff;
+          text-shadow: 0 0 10px rgb(255, 255, 255);
+      }
+      h3{
+          /*要素の配置*/
+          position:absolute;
+          /*要素を天地中央寄せ*/
+          top: 38%;
+          left: 52%;
+          transform: translateY(-50%) translateX(-50%);
+          /*見た目の調整*/
+          @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+          font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', 'MS PGothic', sans-serif;
+          color:#4b0082;
+          text-shadow: 0 0 10px rgb(255, 255, 255);
+      }
+      h4{
+          /*要素の配置*/
+          position:absolute;
+          /*要素を天地中央寄せ*/
+          top: 69%;
+          left: 52%;
+          transform: translateY(-50%) translateX(-50%);
+          /*見た目の調整*/
+          font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','MS Ｐ明朝', 'MS PMincho', serif;
+          color:#ffffff;
+          text-shadow: 0 0 15px #666;
+      }
+  }
